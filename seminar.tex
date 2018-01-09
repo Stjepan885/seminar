@@ -1,0 +1,54 @@
+\documentclass{beamer}
+
+\usepackage{circuitikz}
+\usepackage{listings}
+\usetheme{Warsaw}
+\setbeamertemplate{frame numbering}[fraction]
+\usecolortheme{crane}
+\title{\textbf{IZRADA ELEKTRICNIH DIJAGRAMA}}
+\subtitle{LaTeX}
+\author{Stjepan Turk \and Martin Luk \and Jan Lamza}
+
+
+\institute{RiTeh}
+\date{}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}[fragile]{korištenje paketa Circuitikz}\vspace{20pt}
+\begin{itemize}
+\item{Koristimo paket Circuitikz}
+\item{ukljucivanje u preambulu}
+\item{u sebi sadrzi tikz}\\
+\vspace{30pt}
+\begin{centering}
+primjer strukture koda :
+\end{centering}
+\end{itemize}
+
+\begin{lstlisting}
+	
+		\begin{circuitikz} \draw
+		
+		code
+		;
+		\end{circuitikz}
+	
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+
+\begin{circuitikz} \draw
+(0,0) to[battery] (0,4)
+	  to[ammeter] (4,4)
+
+;
+\end{circuitikz}
+\end{frame}
+
+
+\end{document}
