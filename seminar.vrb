@@ -1,0 +1,21 @@
+\frametitle{korištenje paketa Circuitikz}
+\vspace{20pt}
+\begin{itemize}
+\item{Koristimo paket Circuitikz}
+\item{ukljucivanje u preambulu}
+\item{u sebi sadrzi tikz}\\
+\vspace{30pt}
+\begin{centering}
+primjer strukture koda :
+\end{centering}
+\end{itemize}
+
+\begin{lstlisting}
+	
+		\begin{circuitikz} \draw
+		
+		code
+		;
+		\end{circuitikz}
+	
+\end{lstlisting}
